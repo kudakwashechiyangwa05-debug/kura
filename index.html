@@ -20,9 +20,31 @@
 </script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2.5 3h2.2l2.4 11.6a2 2 0 0 0 2 1.6h8.3a2 2 0 0 0 2-1.5L21.5 7H6"/></symbol>
+    <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="9" cy="6.5" rx="6" ry="3"/><path d="M3 6.5v4c0 1.7 2.7 3 6 3s6-1.3 6-3v-4"/><path d="M3 10.5v4c0 1.7 2.7 3 6 3 1 0 2-.1 2.8-.4"/><ellipse cx="16" cy="14.5" rx="5" ry="2.5"/><path d="M11 14.5v3c0 1.4 2.2 2.5 5 2.5s5-1.1 5-2.5v-3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v15H5.5A1.5 1.5 0 0 0 4 19.5z"/><path d="M4 19.5A1.5 1.5 0 0 0 5.5 21H20v-3"/><path d="M8.5 8h7M8.5 11.5h5"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/><path d="M16 7h4v4"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M5 3h14v18l-2.3-1.5L14.3 21 12 19.5 9.7 21l-2.4-1.5L5 21z"/><path d="M8.5 8h7M8.5 11.5h7M8.5 15h4"/></symbol>
+    <symbol id="i-offline" viewBox="0 0 24 24"><path d="M2 2l20 20"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M5 12.9a10 10 0 0 1 5.2-2.7M19 12.9a10 10 0 0 0-2.4-1.7"/><path d="M1.9 8.8A15 15 0 0 1 6.5 6M22.1 8.8A15 15 0 0 0 10.7 5"/><circle cx="12" cy="20" r=".6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.3 8.3-8 9-4.7-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-android" viewBox="0 0 24 24"><path d="M5 10h14v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><path d="M5 10a7 7 0 0 1 14 0"/><path d="M8 3.5l1.3 2.2M16 3.5l-1.3 2.2"/><circle cx="9.5" cy="7.6" r=".5"/><circle cx="14.5" cy="7.6" r=".5"/><path d="M2.5 11v5M21.5 11v5M9 19v2.5M15 19v2.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M5 3.5v17a1 1 0 0 0 1.5.9l14-8.5a1 1 0 0 0 0-1.8l-14-8.5A1 1 0 0 0 5 3.5z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  </defs>
+</svg>
+
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="index.html"><img src="img/icon-512.png" alt="">Kura</a>
+    <a class="brand" href="index.html"><span class="logo">K</span>Kura</a>
     <nav>
       <a class="hide-sm" href="index.html#features">Features</a>
       <a class="hide-sm" href="index.html#prices">Prices</a>
@@ -35,60 +57,66 @@
 
 <div class="hero">
   <div class="wrap">
-    <div>
+    <div class="hero-text">
       <span class="pill">Made in Zimbabwe &middot; Works without data</span>
       <h1>Throw away the exercise book. Kura counts for you.</h1>
-      <p class="lead">Kura is the business book on your phone. Record sales in seconds, know who owes you, see your stock and your real profit, in USD, ZiG and Rand.</p>
+      <p class="lead">The business book on your phone. Record sales in seconds, know who owes you, and see your stock and real profit in USD, ZiG and Rand.</p>
       <div class="btns">
         <a class="btn" href="#get">Get Kura free</a>
-        <a class="btn light" href="app/">Open Kura in your browser</a>
+        <a class="btn light" href="app/">Open in your browser</a>
       </div>
       <ul class="ticks">
-        <li>Free to start, 14 days of every feature</li>
-        <li>No data bundle, no account, no sign-in</li>
-        <li>English, ChiShona and isiNdebele</li>
+        <li><svg><use href="#i-check"/></svg>Free to start, 14 days of every feature</li>
+        <li><svg><use href="#i-check"/></svg>No data bundle, no account, no sign-in</li>
+        <li><svg><use href="#i-check"/></svg>English, ChiShona and isiNdebele</li>
       </ul>
     </div>
-    <img class="phone" src="img/01-dashboard.jpg" alt="Kura home screen showing today's sales and profit" width="540" height="960">
+    <div class="hero-art">
+      <div class="phone back"><img src="img/app-debts.jpg" alt="" width="520" height="1040"></div>
+      <div class="phone front"><img src="img/app-dashboard.jpg" alt="Kura home screen showing today's sales and profit" width="520" height="1040"></div>
+    </div>
   </div>
 </div>
 
 <section id="features">
   <div class="wrap">
+    <p class="kicker">Features</p>
     <h2>Everything your business book does, and more</h2>
     <p class="sub">Kura replaces the exercise book you write your sales in, and it does the maths for you.</p>
     <div class="grid">
-      <div class="card"><div class="ico">🛒</div><h3>Sell in seconds</h3><p>Tap items to sell. Half a kg or $2.50 worth is no problem. Kura works out the change.</p></div>
-      <div class="card"><div class="ico">💵</div><h3>USD, ZiG and Rand</h3><p>Price in one currency, take payment in any. Cash, EcoCash, InnBucks, OneMoney, bank or split payments.</p></div>
-      <div class="card"><div class="ico">📒</div><h3>Chikwereti made easy</h3><p>See exactly who owes you and when they promised to pay. Send a polite WhatsApp reminder with one tap.</p></div>
-      <div class="card"><div class="ico">📦</div><h3>Stock that counts itself</h3><p>Stock goes down with every sale. See what is running low and send the reorder list to your supplier.</p></div>
-      <div class="card"><div class="ico">📈</div><h3>Know your real profit</h3><p>Today's sales and profit on the home screen. Expenses like transport, ZESA and rent. Reports for any period.</p></div>
-      <div class="card"><div class="ico">🧾</div><h3>Receipts on WhatsApp</h3><p>Send a receipt in one tap, or print it. PDF quotations, invoices and delivery notes on paid plans.</p></div>
-      <div class="card"><div class="ico">📵</div><h3>Works without data</h3><p>Everything stays on your phone. Kura works fully offline, even in places with no network.</p></div>
-      <div class="card"><div class="ico">🔒</div><h3>Safe backups</h3><p>Back up to WhatsApp or Google Drive, and restore on a new phone if yours is lost or stolen.</p></div>
+      <div class="card"><span class="ico"><svg><use href="#i-cart"/></svg></span><h3>Sell in seconds</h3><p>Tap items to sell. Half a kg or $2.50 worth is no problem. Kura works out the change.</p></div>
+      <div class="card"><span class="ico"><svg><use href="#i-coins"/></svg></span><h3>USD, ZiG and Rand</h3><p>Price in one currency, take payment in any. Cash, EcoCash, InnBucks, OneMoney, bank or split payments.</p></div>
+      <div class="card"><span class="ico"><svg><use href="#i-book"/></svg></span><h3>Chikwereti made easy</h3><p>See who owes you and when they promised to pay. Send a polite WhatsApp reminder with one tap.</p></div>
+      <div class="card"><span class="ico"><svg><use href="#i-box"/></svg></span><h3>Stock that counts itself</h3><p>Stock goes down with every sale. See what is running low and send the reorder list to your supplier.</p></div>
+      <div class="card"><span class="ico"><svg><use href="#i-chart"/></svg></span><h3>Know your real profit</h3><p>Today's sales and profit on the home screen. Track transport, ZESA and rent. Reports for any period.</p></div>
+      <div class="card"><span class="ico"><svg><use href="#i-receipt"/></svg></span><h3>Receipts on WhatsApp</h3><p>Send a receipt in one tap, or print it. PDF quotations, invoices and delivery notes on paid plans.</p></div>
+      <div class="card"><span class="ico"><svg><use href="#i-offline"/></svg></span><h3>Works without data</h3><p>Everything stays on your phone. Kura works fully offline, even where there is no network.</p></div>
+      <div class="card"><span class="ico"><svg><use href="#i-shield"/></svg></span><h3>Safe backups</h3><p>Back up to WhatsApp or Google Drive, and restore on a new phone if yours is lost or stolen.</p></div>
     </div>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
+    <p class="kicker">Screens</p>
     <h2>See it for yourself</h2>
-    <p class="sub">Swipe to see more screens.</p>
+    <p class="sub only-sm">Swipe to see more screens &rarr;</p>
     <div class="shots">
-      <img src="img/01-dashboard.jpg" alt="Home screen" loading="lazy" width="540" height="960">
-      <img src="img/02-sell-cart.jpg" alt="Selling items" loading="lazy" width="540" height="960">
-      <img src="img/03-checkout.jpg" alt="Taking payment and change" loading="lazy" width="540" height="960">
-      <img src="img/04-receipt.jpg" alt="Receipt" loading="lazy" width="540" height="960">
-      <img src="img/05-debts.jpg" alt="Debts" loading="lazy" width="540" height="960">
-      <img src="img/06-stock.jpg" alt="Stock" loading="lazy" width="540" height="960">
-      <img src="img/07-reports.jpg" alt="Reports" loading="lazy" width="540" height="960">
-      <img src="img/08-cashbook.jpg" alt="Cashbook" loading="lazy" width="540" height="960">
+      <figure><div class="phone"><img src="img/app-dashboard.jpg" alt="" width="520" height="1040"></div><figcaption>Today's sales and profit</figcaption></figure>
+      <figure><div class="phone"><img src="img/app-sell.jpg" alt="" width="520" height="1040"></div><figcaption>Tap to sell</figcaption></figure>
+      <figure><div class="phone"><img src="img/app-checkout.jpg" alt="" width="520" height="1040"></div><figcaption>Cash, EcoCash or split</figcaption></figure>
+      <figure><div class="phone"><img src="img/app-receipt.jpg" alt="" width="520" height="1040"></div><figcaption>Receipts in one tap</figcaption></figure>
+      <figure><div class="phone"><img src="img/app-debts.jpg" alt="" width="520" height="1040"></div><figcaption>Who owes you</figcaption></figure>
+      <figure><div class="phone"><img src="img/app-stock.jpg" alt="" width="520" height="1040"></div><figcaption>Stock and low-stock alerts</figcaption></figure>
+      <figure><div class="phone"><img src="img/app-reports.jpg" alt="" width="520" height="1040"></div><figcaption>Reports for any period</figcaption></figure>
+      <figure><div class="phone"><img src="img/app-cashbook.jpg" alt="" width="520" height="1040"></div><figcaption>Cash, mobile money and bank</figcaption></figure>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
+    <p class="kicker">For every business</p>
     <h2>Made for your kind of business</h2>
     <p class="sub">Choose your business type and Kura sets itself up for you.</p>
     <div class="chips">
@@ -101,83 +129,91 @@
 
 <section id="prices" class="alt">
   <div class="wrap">
+    <p class="kicker">Prices</p>
     <h2>Simple prices</h2>
-    <p class="sub">Start free. Every new phone gets Kura Business free for 14 days. After that, keep the free plan for as long as you like, or pay weekly, monthly or yearly. You can pay the ZiG equivalent at the day's rate.</p>
+    <p class="sub">Start free. Every new phone gets Kura Business free for 14 days. Then keep the free plan as long as you like, or pay by the week, month or year. You can pay the ZiG equivalent at the day's rate.</p>
     <div class="plans">
       <div class="plan">
         <h3>Kura Free</h3>
         <p class="price">$0</p>
-        <p class="alts">forever</p>
+        <p class="alts">Free forever</p>
         <ul>
-          <li>Sales, receipts and stock</li>
-          <li>Debts with WhatsApp reminders</li>
-          <li>Expenses and cashbook</li>
-          <li>USD, ZiG and Rand, split payments</li>
-          <li>Up to 50 products</li>
-          <li>Reports for the last 7 days</li>
-          <li>Backup and restore</li>
+          <li><svg><use href="#i-check"/></svg>Sales, receipts and stock</li>
+          <li><svg><use href="#i-check"/></svg>Debts with WhatsApp reminders</li>
+          <li><svg><use href="#i-check"/></svg>Expenses and cashbook</li>
+          <li><svg><use href="#i-check"/></svg>USD, ZiG and Rand, split payments</li>
+          <li><svg><use href="#i-check"/></svg>Up to 50 products</li>
+          <li><svg><use href="#i-check"/></svg>Reports for the last 7 days</li>
+          <li><svg><use href="#i-check"/></svg>Backup and restore</li>
         </ul>
       </div>
       <div class="plan best">
+        <span class="tag">Most popular</span>
         <h3>Kura Plus</h3>
-        <p class="price">$3 <small>/ month</small></p>
-        <p class="alts">$1 a week &middot; $30 a year</p>
+        <p class="price">$3<small>/month</small></p>
+        <p class="alts">or $1 a week &middot; $30 a year</p>
         <ul>
-          <li>Everything in Free</li>
-          <li>More than 50 products</li>
-          <li>Reports for any period, export to Excel</li>
-          <li>PDF quotations, invoices and delivery notes</li>
-          <li>Customer statements and day-end summaries on WhatsApp</li>
-          <li>Lay-by, job cards and bookings</li>
-          <li>Wholesale prices, sell by case or pack</li>
-          <li>Cash-up: open and close the day</li>
+          <li><svg><use href="#i-check"/></svg><b>Everything in Free, plus:</b></li>
+          <li><svg><use href="#i-check"/></svg>More than 50 products</li>
+          <li><svg><use href="#i-check"/></svg>Reports for any period, export to Excel</li>
+          <li><svg><use href="#i-check"/></svg>PDF quotations, invoices and delivery notes</li>
+          <li><svg><use href="#i-check"/></svg>Statements and day-end summaries on WhatsApp</li>
+          <li><svg><use href="#i-check"/></svg>Lay-by, job cards and bookings</li>
+          <li><svg><use href="#i-check"/></svg>Wholesale prices, sell by case or pack</li>
+          <li><svg><use href="#i-check"/></svg>Cash-up: open and close the day</li>
         </ul>
       </div>
       <div class="plan">
         <h3>Kura Business</h3>
-        <p class="price">$8 <small>/ month</small></p>
-        <p class="alts">$2.50 a week &middot; $80 a year</p>
+        <p class="price">$8<small>/month</small></p>
+        <p class="alts">or $2.50 a week &middot; $80 a year</p>
         <ul>
-          <li>Everything in Plus</li>
-          <li>Staff accounts with PINs, roles and commission</li>
-          <li>More than one business or branch</li>
+          <li><svg><use href="#i-check"/></svg><b>Everything in Plus, plus:</b></li>
+          <li><svg><use href="#i-check"/></svg>Staff accounts with PINs, roles and commission</li>
+          <li><svg><use href="#i-check"/></svg>More than one business or branch</li>
         </ul>
+        <p class="plan-note">For shops with workers, and owners with more than one shop.</p>
       </div>
     </div>
 
-    <h2 style="margin-top:44px">How to pay</h2>
-    <p class="sub">Your records are never locked. If a plan ends, Kura simply goes back to the free plan.</p>
-    <div class="steps">
-      <div class="card"><h3>Open Plan in Kura</h3><p>In Kura, go to <b>Plan</b> and choose Plus or Business and how long. Kura shows your <b>Install ID</b>.</p></div>
-      <div class="card"><h3>Pay</h3><p>Pay with EcoCash: 0776 213 743 (+263 776 213 743), or cash to any Kura agent.</p></div>
-      <div class="card"><h3>Send proof on WhatsApp</h3><p>Tap <b>Send proof on WhatsApp</b> in Kura. It sends your Install ID and the plan to us.</p></div>
-      <div class="card"><h3>Enter your code</h3><p>We send back your activation code. Tap <b>Paste</b>, then <b>Activate</b>, and your plan switches on straight away.</p></div>
-    </div>
-    <div class="pay">
-      <div class="card"><b>EcoCash</b><p class="big">Send to 0776 213 743</p></div>
-      <div class="card"><b>Cash</b><p>Pay any Kura agent and get your code on the spot</p></div>
+    <div class="howpay">
+      <h3>How to pay</h3>
+      <ol class="steps">
+        <li><b>Open Plan in Kura.</b> Choose Plus or Business and how long. Kura shows your Install ID.</li>
+        <li><b>Pay.</b> Send EcoCash to 0776 213 743, or pay cash to any Kura agent.</li>
+        <li><b>Tap Send proof on WhatsApp.</b> It sends us your Install ID and plan.</li>
+        <li><b>Enter your code.</b> We send back an activation code. Tap Paste, then Activate.</li>
+      </ol>
+      <div class="pay"><div class="card"><b>EcoCash</b><p class="big">Send to 0776 213 743</p></div>
+      <div class="card"><b>Cash</b><p>Pay any Kura agent and get your code on the spot</p></div></div>
+      <p class="note">Your records are never locked. If a plan ends, Kura simply goes back to the free plan.</p>
     </div>
   </div>
 </section>
 
 <section id="get">
   <div class="wrap">
+    <p class="kicker">Download</p>
     <h2>Get Kura</h2>
     <p class="sub">Free to download. Your records stay on your device.</p>
     <div class="dl">
       <div class="card">
-        <div class="ico">🤖</div><h3>Android phone</h3>
-        <p>Download and install Kura on your Android phone. If your phone asks, allow installing from your browser.</p>
-        <a class="btn" href="https://github.com/kudakwashechiyangwa05-debug/kura/releases/latest/download/Kura.apk">Download for Android</a>
+        <span class="ico"><svg><use href="#i-android"/></svg></span>
+        <h3>Android phone</h3>
+        <p>Download Kura and tap the file to install it. If your phone asks, allow installing from your browser.</p>
+        <a class="btn" href="https://github.com/kudakwashechiyangwa05-debug/kura/releases/latest/download/Kura.apk"><svg><use href="#i-download"/></svg>Download for Android</a>
+        <span class="fine">Kura.apk &middot; 3.8 MB</span>
       </div>
       <div class="card">
-        <div class="ico">▶️</div><h3>Google Play</h3>
+        <span class="ico"><svg><use href="#i-play"/></svg></span>
+        <h3>Google Play</h3>
         <p>Kura is coming to the Google Play Store soon. Until then, use the Android download.</p>
-        <a class="btn" aria-disabled="true">Coming soon</a>
+        <span class="soon">Coming soon</span>
       </div>
       <div class="card">
-        <div class="ico">🍏</div><h3>iPhone, laptop or computer</h3>
-        <p>Open Kura in Safari, Chrome or Edge. On iPhone, tap <b>Share</b>, then <b>Add to Home Screen</b>. It then works like an app, even offline.</p>
+        <span class="ico"><svg><use href="#i-globe"/></svg></span>
+        <h3>iPhone or computer</h3>
+        <p>Open Kura in Safari, Chrome or Edge. On iPhone, tap <b>Share</b>, then <b>Add to Home Screen</b> to use it like an app, even offline.</p>
         <a class="btn" href="app/">Open Kura</a>
       </div>
     </div>
@@ -185,15 +221,16 @@
 </section>
 
 <section class="alt">
-  <div class="wrap">
+  <div class="wrap narrow">
+    <p class="kicker">Help</p>
     <h2>Questions</h2>
     <details><summary>Do I need data to use Kura?</summary><p>No. Kura works fully offline. You only need data to download it, to send WhatsApp messages and to make online backups.</p></details>
-    <details><summary>Where are my records kept?</summary><p>On your phone only. We cannot see them. Make a backup often (Settings, <b>Back up now</b>) and send it to yourself on WhatsApp or Google Drive.</p></details>
+    <details><summary>Where are my records kept?</summary><p>On your phone only. We cannot see them. Make a backup often (Settings, Back up now) and send it to yourself on WhatsApp or Google Drive.</p></details>
     <details><summary>What happens when my plan ends?</summary><p>Kura goes back to the free plan. Nothing is deleted or locked. Only the paid features switch off until you renew.</p></details>
     <details><summary>I changed my phone. Do I lose my plan?</summary><p>Restore your backup on the new phone, then send us your new Install ID on WhatsApp. We move the rest of your plan to the new phone once.</p></details>
     <details><summary>Can my workers use Kura?</summary><p>Yes. Kura Business gives each worker their own PIN and role, so you can see who sold what and pay commission.</p></details>
     <details><summary>Is Kura a ZIMRA fiscal device?</summary><p>No. Kura helps you keep good records, which makes tax time easier, but it does not file tax for you.</p></details>
-    <details><summary>Android says the app is from an unknown source</summary><p>That is normal for apps downloaded from a website. Tap Settings, allow your browser to install apps, then go back and tap Install. Kura will also be on Google Play soon.</p></details>
+    <details><summary>My phone says the app is from an unknown source</summary><p>That is normal for apps downloaded from a website. Tap Settings, allow your browser to install apps, then go back and tap Install.</p></details>
   </div>
 </section>
 
@@ -203,8 +240,8 @@
       <h2>Need help or want a demo?</h2>
       <p>Chat to us on WhatsApp. We answer in English, ChiShona and isiNdebele.</p>
       <div class="btns">
-        <a class="btn wa" href="https://wa.me/263776213743?text=Hello%20Kura%2C%20I%20have%20a%20question.">Chat on WhatsApp</a>
-        <a class="btn light" href="agents.html">Become a Kura agent</a>
+        <a class="btn wa" href="https://wa.me/263776213743?text=Hello%20Kura%2C%20I%20have%20a%20question."><svg><use href="#i-chat"/></svg>Chat on WhatsApp</a>
+        <a class="btn ghost" href="agents.html">Become a Kura agent</a>
       </div>
     </div>
   </div>
@@ -212,16 +249,30 @@
 
 <footer>
   <div class="wrap">
-    <div><b>Kura</b> &middot; the business book on your phone &middot; Made in Zimbabwe</div>
-    <div>
-      <a href="https://wa.me/263776213743?text=Hello%20Kura%2C%20I%20have%20a%20question.">WhatsApp +263 776 213 743</a> &middot;
-      <a href="mailto:kudakwashechiyangwa05@gmail.com">Email</a> &middot;
-      <a href="agents.html">Agents</a> &middot;
-      <a href="legal/privacy.html">Privacy</a> &middot;
-      <a href="legal/terms.html">Terms</a>
+    <div class="foot-brand">
+      <a class="brand" href="index.html"><span class="logo">K</span>Kura</a>
+      <p>The business book on your phone. Made in Zimbabwe.</p>
     </div>
-    <div>&copy; 2026 Kura</div>
+    <div class="foot-links">
+      <b>Kura</b>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#prices">Prices</a>
+      <a href="index.html#get">Download</a>
+      <a href="app/">Open Kura</a>
+    </div>
+    <div class="foot-links">
+      <b>Help</b>
+      <a href="https://wa.me/263776213743?text=Hello%20Kura%2C%20I%20have%20a%20question.">WhatsApp us</a>
+      <a href="mailto:kudakwashechiyangwa05@gmail.com">Email us</a>
+      <a href="agents.html">Become an agent</a>
+    </div>
+    <div class="foot-links">
+      <b>Legal</b>
+      <a href="legal/privacy.html">Privacy policy</a>
+      <a href="legal/terms.html">Terms of use</a>
+    </div>
   </div>
+  <div class="wrap copy">&copy; 2026 Kura, Zimbabwe</div>
 </footer>
 
 </body>
